@@ -163,3 +163,68 @@ print(String_methods.islower())
 print(String_methods.isupper())
 print(String_methods.replace("M","m"))
 print(String_methods.split())
+
+# List => Mutable
+
+fruit_bastket = ['Apple','Banana','Mango']
+mixed_basket = ['Potato',123,'Onion',543]
+nested_list = [['10kg',1,"A"],['B',2,'20kg']]
+
+print("The value of the list is:",fruit_bastket)
+print(fruit_bastket[:])
+print(fruit_bastket[0])
+print(fruit_bastket[3:])
+print(fruit_bastket[2:5])
+print(fruit_bastket[-1])
+print(fruit_bastket[-3:])
+print(fruit_bastket[-4:-1])
+print(fruit_bastket[::-1]) # Reversing the list
+
+# List Methods
+
+print(len(fruit_bastket))
+print(len(mixed_basket))
+print(len(nested_list))
+mixed_basket.insert(2,'Watermelon')
+print(mixed_basket)
+mixed_basket.append("Orange")
+print(mixed_basket)
+fruit_bastket.extend(nested_list)
+print(fruit_bastket)
+fruit_bastket.remove('Banana')
+print(fruit_bastket)
+fruit_bastket.pop()
+print(fruit_bastket)
+
+# Tuple => Immutable
+
+season = ('Summer','Rainy','Winter')
+print(season)
+
+# Dictionary => Key:Value
+
+roll_no = { 1 : 'Amartya', 2 : 'Anand' }
+print(type(roll_no))
+print(roll_no)
+print(roll_no[2])
+roll_no[3] = 'Aniket'
+print(roll_no)
+
+# Dictionary methods
+
+print(roll_no.keys())
+print(roll_no.values())
+print(roll_no.items())
+
+# Nested Dictionary
+
+society = {
+    'wing_A' : {'flats' : 20, 'vehicles' : 22},
+    'wing_D' : {'flats' : 21, 'vehicles' : 32},
+    'wing_C' : {'flats' : 30, 'vehicles' : 42},
+    'wing_B' : {'flats' : 26, 'vehicles' : 52},
+}
+print(society['wing_B']['flats'])
+
+
+
