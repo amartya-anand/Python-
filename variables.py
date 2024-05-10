@@ -226,5 +226,40 @@ society = {
 }
 print(society['wing_B']['flats'])
 
+# Dictionary Comprehension
+
+num = { 'one' : 1, 'two' : 2, 'three' : 3}
+squared_num = {k: v**2 for (k,v) in num.items()}
+print(squared_num)
+
+# Set => Unordered
+
+my_set = { 1,2,"a"}
+print(my_set)
+my_set2 = { 3,4,"b"}
+print(my_set.union(my_set2))
+
+# Typecasting
+
+num = 100
+print(type(num))
+num2 = str(num)
+print(type(num2))
+
+n = "123"
+name2 = int(n)
+print(type(n))
+print(type(name2))
+
+t = [1,2,3]
+print(type(t))
+x = tuple(t)
+print(type(x))
+
+tup1 = ('a','b','c')
+print(type(tup1))
+list1 = list(tup1)
+print(type(list1))
+
 
 
