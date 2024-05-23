@@ -30,15 +30,12 @@ class Staff:
 
         self.email = first+'.'+last+'@school.com' 
 
- 
-
     # method to display full name 
 
     def fullname(self): 
 
         return'{} {}'.format(self.first,self.last) 
 
- 
 
     # method to hike pay by 30% 
 
@@ -58,7 +55,6 @@ class Teacher(Staff):
 class Peon(Staff): 
     pass 
 
- 
 
 # Accountant is subclass 
 
@@ -225,7 +221,158 @@ print('Accountant Salary is:', acc1.pay)
 
 print('BusDriver Salary is:', bus1.pay) 
 
+
+# Single inheritance
+class Parent: 
+
+    def func1(self): 
+
+        print('this is function 1') 
+
  
 
+class Child(Parent): 
 
+    def func2(self): 
 
+        print('this is function 2') 
+
+ 
+
+obj = Child() 
+
+obj.func1()  
+
+# Multiple inheritance
+
+class Parent: 
+
+    def func1(self): 
+
+        print('this is function 1') 
+
+ 
+
+class Parent2: 
+
+    def func3(self): 
+
+        print('this is function 3') 
+
+ 
+
+class Child(Parent, Parent2): 
+
+    def func2(self): 
+
+        print('this is function 2') 
+
+ 
+
+obj = Child() 
+
+obj.func1() 
+
+obj.func3() 
+
+# Multilevel inheritance
+
+class Parent: 
+
+    def func1(self): 
+
+        print('this is function 1') 
+
+ 
+
+class Parent2(Parent): 
+
+    def func3(self): 
+
+        print('this is function 3') 
+
+ 
+
+class Child(Parent2): 
+
+    def func2(self): 
+
+        print('this is function 2') 
+
+ 
+
+obj = Child() 
+
+obj.func1() 
+
+obj.func3() 
+
+# Hierarchical Inheritance - More than one type of inheritance from the same parent
+
+class Parent: 
+
+    def func1(self): 
+
+        print('this is function 1') 
+
+ 
+
+class Parent2(Parent): 
+
+    def func3(self): 
+
+        print('this is function 3') 
+
+ 
+
+class Child(Parent): 
+
+    def func2(self): 
+
+        print('this is function 2') 
+
+# Super
+
+class Parent: 
+
+    def func1(self): 
+
+        print('this is function 1') 
+
+ 
+
+class Child(Parent): 
+
+    def func2(self): 
+
+        super().func1() 
+
+        print('this is function 2') 
+
+ 
+
+ob = Child() 
+
+ob.func2() 
+
+# Method overriding
+
+class Parent: 
+
+    def func1(self): 
+
+        print('this is function 1') 
+
+ 
+
+class Child(Parent): 
+
+    def func1(self): 
+
+        print('this is function 2') 
+
+ 
+
+ob = Child() 
+
+ob.func1() 
